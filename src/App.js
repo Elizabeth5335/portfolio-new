@@ -5,7 +5,7 @@ import About from './components/About'
 import Skills from './components/skills/Skills'
 import Resume from './components/resume/Resume'
 import Contact from './components/Contact'
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/portfolio/Portfolio';
 
 
 function App() {

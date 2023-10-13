@@ -37,7 +37,6 @@
 }
 
 .cv-button {
-    /* background: #e2c7c7; */
     background: linear-gradient(
       45deg,
       #e2c7c7 0%,
@@ -62,10 +61,6 @@
     
   
 }
-
-/* .hire-button:hover {
-  background-color: #3b6c71;
-} */
 
 .button:hover {
   background-position: right bottom; 
