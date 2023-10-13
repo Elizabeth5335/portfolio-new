@@ -1,0 +1,47 @@
+#skills {
+  background-color: #e2c7c7;
+}
+
+.skills{
+    align-self: center;
+    height: 100%;
+}
+
+.skills-row{
+    max-width: 100%;
+    display: flex;
+}
+.skills-row div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h1{
+    color: #14161a !important;
+}
+
+#yii img{
+    height: calc(1.375rem + 1.5vw);
+}
+
+#yii{
+    margin: 0.125rem 0.5rem;
+}
+
+.skills-title span {
+  color: #f0efeb;
+}
+
+.code-block {
+  background-color: #14161a !important;
+  z-index: 10;
+}
+
+.code-block span {
+  background-color: #14161a !important;
+}
+
+pre{
+  overflow: hidden;
+}
