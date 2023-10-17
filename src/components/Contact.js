@@ -7,30 +7,36 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socials } from "../socials";
+import { ThemeContext } from "../App";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
-
+  const { theme } = React.useContext(ThemeContext);
+  const { t } = useTranslation("global");
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact" data-theme={theme}>
       <div className="container glass m-auto">
         <div className="section-title contact-title">
-          <span>Contact</span>
-          <h2>Contact</h2>
+          <span>{t("contact.contact")}</span>
+          <h2>{t("contact.contact")}</h2>
         </div>
         <div className="row">
-          <div className="col-lg-5 text-center">
-            <img
-              className="img-fluid contact-img pb-5 ps-5"
-              src={myImg}
-              alt=""
-            />
-          </div>
-          <div className="col-lg-6 me-2">
+          {theme === "light" && (
+            <div className="col-lg-5 text-center">
+              <img
+                className="img-fluid contact-img pb-5 ps-5"
+                src={myImg}
+                alt=""
+              />
+            </div>
+          )}
+          <div className={`${theme === "dark" ? "col-12" : "col-lg-6"} me-2`}>
             <div className="row">
               <div className="col-md-12">
                 <div className="info-box">
                   <FontAwesomeIcon icon={faShareNodes} size="2x" />
-                  <h3> Social Profiles </h3>
+                  <h3> {t("contact.socials")} </h3>
                   <div className="social-links">
                     {socials.map((social) => {
                       return (
@@ -39,6 +45,7 @@ export default function Contact() {
                           key={social.url}
                           href={social.url}
                           target="_blank"
+                          alt={social.icon}
                         >
                           <FontAwesomeIcon icon={social.icon} size="2x" />
                         </a>
@@ -62,7 +69,7 @@ export default function Contact() {
               <div className="col-md-6">
                 <div className="info-box mt-4">
                   <FontAwesomeIcon icon={faPhone} size="2x" />
-                  <h3>Phone </h3>
+                  <h3>{t("contact.phone")} </h3>
                   <p>
                     <a href="tel:+380991889215">+380 991 889 215</a>
                     <br />

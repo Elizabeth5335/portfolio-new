@@ -1,5 +1,6 @@
 import "../../styles/Skills.css";
 import yii2 from "../../assets/images/yii2.png";
+import yii2Dark from "../../assets/images/yii2-dark.png";
 import React from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import CodeBlock from "./CodeBlock";
@@ -18,8 +19,14 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { ThemeContext } from "../../App";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t, i18n } = useTranslation("global");
+
+  const { theme, setTheme } = React.useContext(ThemeContext);
+
   const icons = [
     faHtml5,
     faCss3Alt,
@@ -44,10 +51,10 @@ export default function Skills() {
   }, [isInView]);
 
   return (
-    <section id="skills">
+    <section id="skills" data-theme={theme}>
       <div className="section-title skills-title">
-        <span>Skills</span>
-        <h2>Skills</h2>
+        <span>{t("skills")}</span>
+        <h2>{t("skills")}</h2>
       </div>
       <div ref={ref} className="row skills-row">
         <motion.div
@@ -66,7 +73,7 @@ export default function Skills() {
             </h1>
           ))}
           <div className="" id="yii">
-            <img src={yii2} />
+            <img src={theme === "dark" ? yii2Dark : yii2} alt="" />
           </div>
         </motion.div>
       </div>

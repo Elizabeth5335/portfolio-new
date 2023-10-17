@@ -96,12 +96,15 @@ a:hover{
   background-image: url("./assets/images/pl.png");
 }
 
-.header-nav {
+nav{
+  background-color: #FFFEFE;
+}
+
+#header-nav {
   position: fixed;
   width: 100vw;
   display: flex;
   height: 64px;
-  /* background-color: #f0efeb; */
   font-size: 16px;
   color: #14161a;
   justify-content: space-between;
@@ -110,70 +113,21 @@ a:hover{
   z-index: 10000;
 }
 
+[data-theme="dark"] .nav-item .nav-link{
+  color: var(--color-light);
+}
 
 .nav-link {
   text-wrap: nowrap;
   list-style: none;
   padding: 0 16px;
   margin-bottom: 0;
-}
-
-:root {
-  --light: #d8dbe0;
-  --dark: #28292c;
-}
-
-.toggle-switch {
-  position: relative;
-  width: 60px;
-}
-
-label {
-  position: absolute;
-  width: 100%;
-  height: 30px;
-  background-color: var(--dark);
-  border-radius: 15px;
   cursor: pointer;
 }
 
-input {
-  position: absolute;
-  display: none;
-}
 
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  transition: 0.3s;
-}
 
-input:checked ~ .slider {
-  background-color: var(--light);
-}
-
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 8px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  box-shadow: inset 8px -2px 0px 0px var(--light);
-  background-color: var(--dark);
-  transition: 0.3s;
-}
-
-input:checked ~ .slider::before {
-  transform: translateX(30px);
-  background-color: var(--dark);
-  box-shadow: none;
-}
-
-.header-nav a:hover,
+.header-nav .nav-link:hover,
 .dropdown:hover .dropbtn {
   color: #699a9f;
 }
@@ -212,9 +166,3 @@ section {
   padding: 3rem 0;
 }
 
-
-/* @media screen and (min-width: 997px) {
-  section {
-    min-height: 100vh;
-  }
-} */

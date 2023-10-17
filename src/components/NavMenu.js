@@ -1,16 +1,19 @@
 import mylogo from "../assets/images/mylogo.png";
 import React from "react";
 import LanguageSwitcherSelector from "./LanguageSwitcherSelector";
+import { ThemeContext, LanguageContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 export default function NavMenu() {
-  const [language, setLanguage] = React.useState('en')
+  const { theme, setTheme } = React.useContext(ThemeContext);
 
-  function changeLanguageHandler(lang) {
-    setLanguage(lang);
-  }
-
+  const { t, i18n } = useTranslation("global"); 
   return (
-    <nav id="header-nav" className="navbar navbar-expand-lg header-nav">
+    <nav
+      id="header-nav"
+      className="navbar navbar-expand-lg header-nav"
+      data-theme={theme}
+    >
       <img className="navbar-brand nav-logo ms-3" src={mylogo} alt="logo" />
       <button
         className="navbar-toggler me-4"
@@ -28,39 +31,44 @@ export default function NavMenu() {
         <ul className="navbar-nav mr-0">
           <li className="nav-item active">
             <a className="nav-link scrollto" href="#about">
-              {language ? "About" : "Про мене"}
+              {t("navigation.about")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link scrollto" href="#skills">
-              {language ? "Skills" : "Навички"}
+              {t("navigation.skills")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link scrollto" href="#resume">
-              {language ? "Resume" : "Резюме"}
+              {t("navigation.resume")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link scrollto" href="#portfolio">
-              {language ? "Portfolio" : "Портфоліо"}
+              {t("navigation.portfolio")}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link scrollto" href="#contact">
-              {language ? "Contact" : "Контакти"}
+              {t("navigation.contact")}
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link scrollto" href="">
-              Dark theme
-            </a>
+            <div
+              className="nav-link"
+              onClick={() => {
+                setTheme((prevTheme) =>
+                  prevTheme === "dark" ? "light" : "dark"
+                );
+              }}
+            >
+              {theme === "light" ? t("navigation.dark") : t("navigation.light")}{" "}
+              {t("navigation.theme")}
+            </div>
           </li>
           <li className="nav-item">
-            <LanguageSwitcherSelector
-              lang={language}
-              handleChangeLanguage={changeLanguageHandler}
-            />
+            <LanguageSwitcherSelector />
           </li>
         </ul>
       </div>

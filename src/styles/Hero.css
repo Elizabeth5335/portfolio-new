@@ -2,6 +2,7 @@
   --steps: 21;
 }
 
+
 .blob-left {
   z-index: -1;
   position: absolute;
@@ -58,8 +59,6 @@
 
     background-size: 200% 200%;
     transition: background-position 0.3s ease;
-    
-  
 }
 
 .button:hover {
@@ -89,6 +88,28 @@
   }
 }
 
+
+
+[data-theme="dark"] .typing {
+  color: #699a9f;
+  position: relative;
+  &::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: #699a9f;
+    background: var(--background-dark);
+    animation: typing 3s steps(var(--steps)) forwards, caret 1s infinite;
+  }
+}
+
+
+[data-theme="dark"] h1, [data-theme="dark"] .social-icon{
+  color: var(--color-light);
+}
+
+
 @keyframes typing {
   to {
     width: 0;
@@ -102,7 +123,7 @@
 
 .social-icon {
   margin-right: 2rem;
-  color: #14161a;
+  color: var(--background-dark)
 }
 
 

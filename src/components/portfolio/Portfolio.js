@@ -2,8 +2,15 @@ import "../../styles/Portfolio.css";
 import Details from "./Details";
 import projects from "./projects.js";
 import React from "react";
-
+  import { ThemeContext } from "../../App";
+import { useTranslation } from "react-i18next";
+  
 export default function Portfolio() {
+  const { t, i18n } = useTranslation("global");
+
+
+  const {theme, setTheme} = React.useContext(ThemeContext);
+
   const [selectedProject, setSelectedProject] = React.useState(null);
 
   const openDetails = (project) => {
@@ -15,10 +22,10 @@ export default function Portfolio() {
   };
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" data-theme={theme}>
       <div className="section-title">
-        <span>Portfolio</span>
-        <h2>Portfolio</h2>
+        <span>{t("portfolio.portfolio")}</span>
+        <h2>{t("portfolio.portfolio")}</h2>
       </div>
       <div className="gallery">
         {projects.map((project) => (
@@ -30,10 +37,10 @@ export default function Portfolio() {
             <div className="image-overlay"></div>
             <img
               src={project.url}
-              alt={project.name}
+              alt={t(project.name)}
               style={{ width: "100%" }}
             />
-            <div className="image-text">Text to Display</div>
+            <div className="image-text">{t(project.shortDesk)}</div>
           </div>
         ))}
       </div>

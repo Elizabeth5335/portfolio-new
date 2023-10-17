@@ -2,6 +2,20 @@
   background-color: #e2c7c7;
 }
 
+#skills[data-theme="dark"]{
+  background: var(--background-dark);
+
+  .skills-title span{
+  color: #999584;
+  }
+  .skills-title h2{
+    color: #F0EFEB;
+  } 
+  .skills-row h1{
+    color: #F0EFEB
+  }
+}
+
 .skills{
     align-self: center;
     height: 100%;
@@ -17,8 +31,8 @@
     justify-content: space-evenly;
 }
 
-h1{
-    color: #14161a !important;
+#skills h1{
+    color: #14161a;
 }
 
 #yii img{
