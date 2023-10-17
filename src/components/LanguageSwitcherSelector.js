@@ -1,4 +1,3 @@
-import { LanguageContext } from "../App";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +13,6 @@ export default function LanguageSwitcherSelector() {
 
   function handleChangeLanguage(e) {
     localStorage.setItem("lang", e.target.className);
-    const lang = localStorage.getItem("lang");
     i18n.changeLanguage(e.target.className);
   }
 

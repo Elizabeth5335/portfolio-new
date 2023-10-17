@@ -2,7 +2,7 @@ import "../../styles/Portfolio.css";
 import Details from "./Details";
 import projects from "./projects.js";
 import React from "react";
-  import { ThemeContext } from "../../App";
+  import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
   
 export default function Portfolio() {

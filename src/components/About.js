@@ -5,7 +5,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Particles from "react-tsparticles";
 import particlesConfig from "./particles-config";
 import { loadFull } from "tsparticles";
-import { ThemeContext } from "../App";
+import {ThemeContext} from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
 

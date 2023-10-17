@@ -7,31 +7,14 @@ import Resume from "./components/resume/Resume";
 import Contact from "./components/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
 import React, { useState, useEffect } from "react";
+import { ThemeProvider } from './ThemeContext';
 
-export const ThemeContext = React.createContext();
-export const LanguageContext = React.createContext();
+// export const ThemeContext = React.createContext();
 
 function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "dark";
-  });
-  
-  const [language, setLanguage] = useState(() => {
-    return localStorage.getItem("lang") || "EN";
-  });
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  useEffect(() => {
-    localStorage.setItem("lang", language);
-  }, [language]);
-
   return (
     <div className="App">
-      <ThemeContext.Provider value={{ theme, setTheme }}>
-        <LanguageContext.Provider value={{ language, setLanguage }}>
+      <ThemeProvider>
           <NavMenu />
           <HeroSection />
           <About />
@@ -39,8 +22,7 @@ function App() {
           <Resume />
           <Portfolio />
           <Contact />
-        </LanguageContext.Provider>
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </div>
   );
 }

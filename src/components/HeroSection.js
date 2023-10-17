@@ -5,7 +5,7 @@ import "../styles/Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { socials } from "../socials";
-import { ThemeContext, LanguageContext } from "../App";
+import { ThemeContext } from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -13,7 +13,6 @@ export default function HeroSection() {
   const { t, i18n } = useTranslation("global");
 
   const { theme, setTheme } = React.useContext(ThemeContext);
-  const { language, setLanguage } = React.useContext(LanguageContext);
 
   const scroll = () => {
     const section = document.querySelector("#contact");

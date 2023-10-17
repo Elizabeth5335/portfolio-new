@@ -1,7 +1,7 @@
 import blobGreen from "../../assets/images/blob-green-1.png";
 import blobPink from "../../assets/images/blob-pink.png";
 import "../../styles/Resume.css";
-  import { ThemeContext, LanguageContext } from "../../App";
+  import { ThemeContext } from "../../ThemeContext";
   import React from "react";
   import { useTranslation } from "react-i18next";
 

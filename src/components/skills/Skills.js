@@ -19,7 +19,7 @@ import {
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
 
 export default function Skills() {

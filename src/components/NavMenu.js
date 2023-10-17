@@ -1,7 +1,7 @@
 import mylogo from "../assets/images/mylogo.png";
 import React from "react";
 import LanguageSwitcherSelector from "./LanguageSwitcherSelector";
-import { ThemeContext, LanguageContext } from "../App";
+import { ThemeContext } from "../ThemeContext";
 import { useTranslation } from "react-i18next";
 
 export default function NavMenu() {

@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socials } from "../socials";
-import { ThemeContext } from "../App";
+import { ThemeContext } from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
