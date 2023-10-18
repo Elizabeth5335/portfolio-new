@@ -6,21 +6,41 @@ import Skills from "./components/skills/Skills";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-import { ThemeProvider } from './ThemeContext';
+import { ThemeProvider } from "./ThemeContext";
+
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "./components/NotFound";
 
 export default function App() {
   return (
-    <div className="App">
-      <ThemeProvider>
-          <NavMenu />
-          <HeroSection />
-          <About />
-          <Skills />
-          <Resume />
-          <Portfolio />
-          <Contact />
-      </ThemeProvider>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="App">
+              <ThemeProvider>
+                <NavMenu />
+                <HeroSection />
+                <About />
+                <Skills />
+                <Resume />
+                <Portfolio />
+                <Contact />
+              </ThemeProvider>
+            </div>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <ThemeProvider>
+              <NotFound />
+            </ThemeProvider>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
-

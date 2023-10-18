@@ -84,6 +84,11 @@
     "contact": "Contact",
     "phone": "Phone",
     "socials": "Social Profiles"
+  },
+  "notFound":{
+    "Oops":"Oops!",
+    "notExist":"It looks like this page doesn't exist",
+    "home":"Home"
   }
 
 }

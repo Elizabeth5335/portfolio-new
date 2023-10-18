@@ -85,5 +85,10 @@
     "contact": "Kontakt",
     "phone": "Telefon",
     "socials": "Profile społecznościowe"
+  },
+  "notFound":{
+    "Oops":"Ups!",
+    "notExist":"Wygląda na to, że ta strona nie istnieje",
+    "home":"Do domu"
   }
 }
