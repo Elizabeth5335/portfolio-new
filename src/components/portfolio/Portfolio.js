@@ -2,36 +2,52 @@ import "../../styles/Portfolio.css";
 import Details from "./Details";
 import projects from "./projects.js";
 import React from "react";
-  import { ThemeContext } from "../../ThemeContext";
+import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
-  
+import SectionTitle from "../SectionTitle";
+
 export default function Portfolio() {
-  const { t, i18n } = useTranslation("global");
-
-
-  const {theme, setTheme} = React.useContext(ThemeContext);
+  const { t } = useTranslation("global");
+  const { theme } = React.useContext(ThemeContext);
 
   const [selectedProject, setSelectedProject] = React.useState(null);
 
-  const openDetails = (project) => {
+  const openDetails = (project, e) => {
+    e.stopPropagation();
     setSelectedProject(project);
+    document.body.classList.add("no-scroll");
   };
 
   const closeDetails = () => {
     setSelectedProject(null);
+    document.body.classList.remove("no-scroll");
   };
+
+  React.useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (selectedProject) {
+        if (!event.target.closest(".details")) {
+          closeDetails();
+        }
+      }
+    };
+
+    document.body.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.body.removeEventListener("click", handleClickOutside);
+    };
+  }, [selectedProject]);
 
   return (
     <section id="portfolio" data-theme={theme}>
-      <div className="section-title">
-        <span>{t("portfolio.portfolio")}</span>
-        <h2>{t("portfolio.portfolio")}</h2>
-      </div>
+      <SectionTitle title="portfolio.portfolio" customClass="" />
+
       <div className="gallery">
         {projects.map((project) => (
           <div
             className="gallery-image"
-            onClick={() => openDetails(project)}
+            onClick={(e) => openDetails(project, e)}
             key={project.id}
           >
             <div className="image-overlay"></div>
@@ -40,10 +56,21 @@ export default function Portfolio() {
               alt={t(project.name)}
               style={{ width: "100%" }}
             />
-            <div className="image-text">{t(project.shortDesk)}</div>
+            <div className="image-text">
+              <h4>{t(project.shortDesk)}</h4>
+              <div className="row mt-4">
+                {project.technologies &&
+                  project.technologies.map((technology) => (
+                    <span key={technology} className="technology col-4">
+                      {technology}
+                    </span>
+                  ))}
+              </div>
+            </div>
           </div>
         ))}
       </div>
+
       {selectedProject && (
         <>
           <div className="overlay"></div>

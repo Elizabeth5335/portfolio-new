@@ -5,10 +5,10 @@ export default function Details(props) {
   const { name, url, shortDesk, description, technologies, link, gitHub } =
     props;
 
-  const { t, i18n } = useTranslation("global");
+  const { t } = useTranslation("global");
 
   return (
-    <div className="details" onClick={props.closeDetails}>
+    <div className="details">
       <div className="close" onClick={props.closeDetails}>
         <h1>X</h1>
       </div>
@@ -27,12 +27,14 @@ export default function Details(props) {
       </p>
 
       <h2>{t("portfolio.technologies")}</h2>
+      <div className="row">
       {technologies &&
         technologies.map((technology) => (
-          <span key={technology} className="technology">
+          <span key={technology} className="technology col-4">
             {technology}
           </span>
         ))}
+      </div>
       <h2>{t("portfolio.website")}</h2>
       <a href={link} target="_blank">
         {link}

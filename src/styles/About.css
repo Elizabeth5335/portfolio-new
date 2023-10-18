@@ -146,12 +146,13 @@ canvas {
 }
 
 .education svg {
-  margin-bottom: inherit;
+  margin: auto 0;
 }
 
-.education .label {
+.education .label, .education span {
   margin-bottom: auto;
 }
+
 
 .main-row {
   align-items: center;
