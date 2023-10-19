@@ -77,7 +77,7 @@ a:hover {
   }
 }
 
-.ua,
+.uk,
 .en,
 .pl {
   background-size: cover;
@@ -89,7 +89,7 @@ a:hover {
   border: 1px solid #14161a;
   margin-bottom: 10px;
 }
-.ua {
+.uk {
   background-image: url("./assets/images/ua.png");
 }
 

@@ -20,18 +20,18 @@ i18next
   .use(LanguageDetector)
   .init({
     interpolation: { escapeValue: false },
-    // lng: "en",
-    supportedLngs: ["en", "ua", "pl"],
-    fallbackLng: "en",
+    supportedLngs: ["en", "uk", "pl"],
     nonExplicitSupportedLngs: true,
     resources: {
       en: { global: global_en },
       pl: { global: global_pl },
-      ua: { global: global_ua },
+      uk: { global: global_ua },
     },
   });
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+  console.log(navigator.language);
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
