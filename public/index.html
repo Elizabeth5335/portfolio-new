@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      function getPreferredLanguage() {
+        return localStorage.getItem('lang');
+      }
+
+      const userLanguage = getPreferredLanguage() || navigator.language || navigator.userLanguage;
+
+      const supportedLanguages = ["en", "uk", "pl"];
+      const isValidLanguage = supportedLanguages.includes(userLanguage);
+      document.documentElement.lang = isValidLanguage ? userLanguage : "en";
+    </script>
+
     <title>Yelyzaveta Lazarieva Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -40,7 +52,6 @@
       content="Hi! I'm Yelyzaveta, a frontend developer based in Poland. Please feel free to contact me."
     />
     <meta name="twitter:image" content="logo.png" />
-
   </head>
   <body>
     <div id="root"></div>

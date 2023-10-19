@@ -1,5 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Dropdown from "react-bootstrap/Dropdown";
+import { ThemeContext } from "../ThemeContext";
+import { Nav } from "react-bootstrap";
 
 const languages = [
   { code: "en", name: "English" },
@@ -8,28 +11,37 @@ const languages = [
 ];
 
 export default function LanguageSwitcherSelector() {
-  const { t, i18n } = useTranslation("global");
-  const language = i18n.language.split('-')[0];
 
-  function handleChangeLanguage(e) {
-    localStorage.setItem("lang", e.target.className);
-    i18n.changeLanguage(e.target.className);
+  const {theme} = React.useContext(ThemeContext)
+  const { t, i18n } = useTranslation("global");
+  const language = i18n.language.split("-")[0];
+
+  function handleChangeLanguage(code) {
+    localStorage.setItem("lang", code);
+    i18n.changeLanguage(code);
   }
 
-  const options = languages.map((lang) => {
-    if (lang.code != language) {
-      return (
-        <li key={lang.code} onClick={handleChangeLanguage}>
-          <div value={lang.code} className={lang.code}></div>
-        </li>
-      );
-    }
-  });
+  const languageName = languages.find((lang) => lang.code === language)?.name;
+
+  const languageOptions = languages
+    .filter((lang) => lang.code !== language)
+    .map((lang) => (
+      <Dropdown.Item
+        key={lang.code}
+        onClick={() => handleChangeLanguage(lang.code)}
+      >
+        {lang.name}
+      </Dropdown.Item>
+    ));
 
   return (
-    <div className="lang">
-      <div className={language}></div>
-      <ul className="dropdown">{options}</ul>
-    </div>
+    <Nav.Link id="lang-btn">
+      <Dropdown className="lang">
+      <Dropdown.Toggle variant={theme} id="language-dropdown">
+        {languageName}
+      </Dropdown.Toggle>
+      <Dropdown.Menu>{languageOptions}</Dropdown.Menu>
+    </Dropdown>
+    </Nav.Link>
   );
 }

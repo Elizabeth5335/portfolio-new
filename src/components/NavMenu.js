@@ -1,102 +1,89 @@
+import React, { useContext, useEffect, useRef } from "react";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import mylogo from "../assets/images/mylogo.png";
 import logoDark from "../assets/images/logo-dark.png";
-import React from "react";
 import LanguageSwitcherSelector from "./LanguageSwitcherSelector";
 import { ThemeContext } from "../ThemeContext";
 import { useTranslation } from "react-i18next";
+import "../styles/Navigation.css";
 
 export default function NavMenu() {
-  const { theme, setTheme } = React.useContext(ThemeContext);
-
+  const { theme, setTheme } = useContext(ThemeContext);
   const { t } = useTranslation("global");
+  const navRef = useRef(null);
+  const prevScrollY = useRef(0);
 
-  const navRef = React.useRef(null);
-  const prevScrollY = React.useRef(0);
+const isMobile = window.innerWidth <= 992;
 
-  React.useEffect(() => {
-    function handleScroll() {
-      const currentScrollY = window.scrollY;
+  useEffect(() => {
+    if (!isMobile) {
+      function handleScroll() {
+        const currentScrollY = window.scrollY;
 
-      if (prevScrollY.current < currentScrollY) {
-        navRef.current.style.transform = "translateY(-200px)";
-      } else {
-        navRef.current.style.transform = "translateY(0)";
+        if (prevScrollY.current < currentScrollY) {
+          navRef.current.style.transform = "translateY(-200px)";
+        } else {
+          navRef.current.style.transform = "translateY(0)";
+        }
+
+        prevScrollY.current = currentScrollY;
       }
 
-      prevScrollY.current = currentScrollY;
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
+
+
   return (
-    <nav
+    <Navbar
       ref={navRef}
       id="header-nav"
-      className="navbar navbar-expand-lg header-nav"
+      className="header-nav"
+      expand="lg"
       data-theme={theme}
     >
-      <img className="navbar-brand nav-logo ms-3" src={theme==="dark" ? mylogo : logoDark} alt="logo" />
-      <button
-        className="navbar-toggler me-4"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
+      <Navbar.Brand className="">
+        <img className="navbar-brand nav-logo ms-3" src={theme === "dark" ? mylogo : logoDark} alt="logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle
         aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-0">
-          <li className="nav-item active">
-            <a className="nav-link scrollto" href="#about">
-              {t("navigation.about")}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link scrollto" href="#skills">
-              {t("navigation.skills")}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link scrollto" href="#resume">
-              {t("navigation.resume")}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link scrollto" href="#portfolio">
-              {t("navigation.portfolio")}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link scrollto" href="#contact">
-              {t("navigation.contact")}
-            </a>
-          </li>
-          <li className="nav-item">
-            <div
-              className="nav-link"
-              onClick={() => {
-                setTheme((prevTheme) =>
-                  prevTheme === "dark" ? "light" : "dark"
-                );
-              }}
-            >
-              {theme === "light" ? t("navigation.dark") : t("navigation.light")}{" "}
-              {t("navigation.theme")}
-            </div>
-          </li>
-          <li className="nav-item">
+        data-bs-toggle="collapse"
+      />
+      <Navbar.Collapse id="navbarSupportedContent">
+        <Nav className="mr-0">
+          <Nav.Link className="nav-link scrollto" href="#about">
+            {t("navigation.about")}
+          </Nav.Link>
+          <Nav.Link className="nav-link scrollto" href="#skills">
+            {t("navigation.skills")}
+          </Nav.Link>
+          <Nav.Link className="nav-link scrollto" href="#resume">
+            {t("navigation.resume")}
+          </Nav.Link>
+          <Nav.Link className="nav-link scrollto" href="#portfolio">
+            {t("navigation.portfolio")}
+          </Nav.Link>
+          <Nav.Link className="nav-link scrollto" href="#contact">
+            {t("navigation.contact")}
+          </Nav.Link>
+          <Nav.Link
+            className="nav-link"
+            onClick={() => {
+              setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+            }}
+          >
+            {theme === "light" ? t("navigation.dark") : t("navigation.light")}{" "}
+            {t("navigation.theme")}
+          </Nav.Link>
+          {/* <Nav.Link id="lang-btn"> */}
             <LanguageSwitcherSelector />
-          </li>
-        </ul>
-      </div>
-    </nav>
+          {/* </Nav.Link> */}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
