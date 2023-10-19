@@ -1,4 +1,5 @@
 import mylogo from "../assets/images/mylogo.png";
+import logoDark from "../assets/images/logo-dark.png";
 import React from "react";
 import LanguageSwitcherSelector from "./LanguageSwitcherSelector";
 import { ThemeContext } from "../ThemeContext";
@@ -38,7 +39,7 @@ export default function NavMenu() {
       className="navbar navbar-expand-lg header-nav"
       data-theme={theme}
     >
-      <img className="navbar-brand nav-logo ms-3" src={mylogo} alt="logo" />
+      <img className="navbar-brand nav-logo ms-3" src={theme==="dark" ? mylogo : logoDark} alt="logo" />
       <button
         className="navbar-toggler me-4"
         type="button"

@@ -7,7 +7,6 @@ footer{
 }
 
 [data-theme="dark"]{
-    background-color: #14161a;
+    background: #14161a;
     color: #F0EFEB;
-
 }
