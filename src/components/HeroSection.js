@@ -2,17 +2,15 @@ import blobLeft from "../assets/images/blob-left.png";
 import hero from "../assets/images/hero.png";
 import "../styles/Hero.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { socials } from "../socials";
 import { ThemeContext } from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import SocialIcons from "../SocialIcons";
 
 export default function HeroSection() {
-  const { t, i18n } = useTranslation("global");
+  const { t } = useTranslation("global");
 
-  const { theme, setTheme } = React.useContext(ThemeContext);
+  const { theme } = React.useContext(ThemeContext);
 
   const scroll = () => {
     const section = document.querySelector("#contact");
@@ -34,27 +32,17 @@ export default function HeroSection() {
           </h1>
           <p>{t("hero.description")}</p>
           <div className="socials">
-            {socials.map((social) => {
-              return (
-                <a
-                  className="social-icon"
-                  key={social.url}
-                  href={social.url}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={social.icon}
-                    size="2x"
-                    alt={social.icon}
-                  />
-                </a>
-              );
-            })}
+            <SocialIcons />
           </div>
           <div className="row">
-            <button className="col-12 col-sm-5 button cv-button mb-3">
+            <a
+              href="/CV_Yelyzaveta_Lazarieva.pdf"
+              download
+              className="col-12 col-sm-5 button text-center cv-button mb-3"
+            >
               {t("hero.download")}
-            </button>
+            </a>
+
             <button
               className="col-12 col-sm-5 button hire-button mb-3"
               onClick={scroll}

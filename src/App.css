@@ -10,29 +10,33 @@
 
 .App {
   overflow-x: hidden;
-  font-family: 'Kreadon-regular', sans-serif;
+  font-family: "Kreadon-regular", sans-serif;
   font-size: large;
 }
 
-h1, h2, h3, h4, .section-title span{
-  font-family: 'Kreadon', sans-serif;
-  font-size: larger;  
+h1,
+h2,
+h3,
+h4,
+.section-title span {
+  font-family: "Kreadon", sans-serif;
+  font-size: larger;
 }
-
-
-
 
 a {
   text-decoration: none;
   color: inherit;
 }
-a:hover{
+a:hover {
   text-decoration: none;
   color: #41757a;
 }
 
 .header-nav {
   align-items: center;
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 0.3s;
 }
 .nav-logo,
 .navbar-brand {
@@ -73,8 +77,9 @@ a:hover{
   }
 }
 
-
-.ua,.en, .pl{
+.ua,
+.en,
+.pl {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -83,7 +88,7 @@ a:hover{
   border-radius: 50%;
   border: 1px solid #14161a;
   margin-bottom: 10px;
-} 
+}
 .ua {
   background-image: url("./assets/images/ua.png");
 }
@@ -96,8 +101,8 @@ a:hover{
   background-image: url("./assets/images/pl.png");
 }
 
-nav{
-  background-color: #FFFEFE;
+nav {
+  background-color: #fffefe;
 }
 
 #header-nav {
@@ -113,7 +118,7 @@ nav{
   z-index: 10000;
 }
 
-[data-theme="dark"] .nav-item .nav-link{
+[data-theme="dark"] .nav-item .nav-link {
   color: var(--color-light);
 }
 
@@ -124,8 +129,6 @@ nav{
   margin-bottom: 0;
   cursor: pointer;
 }
-
-
 
 .header-nav .nav-link:hover,
 .dropdown:hover .dropbtn {
@@ -165,4 +168,3 @@ nav{
 section {
   padding: 3rem 0;
 }
-

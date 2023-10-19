@@ -5,6 +5,7 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Resume from "./components/resume/Resume";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Portfolio from "./components/portfolio/Portfolio";
 import { ThemeProvider } from "./ThemeContext";
 
@@ -28,6 +29,7 @@ export default function App() {
                 <Resume />
                 <Portfolio />
                 <Contact />
+                <Footer />
               </ThemeProvider>
             </div>
           }

@@ -7,9 +7,33 @@ import { useTranslation } from "react-i18next";
 export default function NavMenu() {
   const { theme, setTheme } = React.useContext(ThemeContext);
 
-  const { t, i18n } = useTranslation("global"); 
+  const { t } = useTranslation("global");
+
+  const navRef = React.useRef(null);
+  const prevScrollY = React.useRef(0);
+
+  React.useEffect(() => {
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+
+      if (prevScrollY.current < currentScrollY) {
+        navRef.current.style.transform = "translateY(-200px)";
+      } else {
+        navRef.current.style.transform = "translateY(0)";
+      }
+
+      prevScrollY.current = currentScrollY;
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <nav
+      ref={navRef}
       id="header-nav"
       className="navbar navbar-expand-lg header-nav"
       data-theme={theme}

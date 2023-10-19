@@ -1,12 +1,11 @@
 import cat from "../assets/images/cat.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/NotFound.css";
 
-import { socials } from "../socials";
 import { ThemeContext } from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import SocialIcons from "../SocialIcons";
 
 export default function NotFound() {
   const { t } = useTranslation("global");
@@ -25,22 +24,7 @@ export default function NotFound() {
           </Link>
 
           <div className="not-found-socials mt-5 mx-auto">
-            {socials.map((social) => {
-              return (
-                <a
-                  className="not-found-social-icon"
-                  key={social.url}
-                  href={social.url}
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={social.icon}
-                    size="2x"
-                    alt={social.icon}
-                  />
-                </a>
-              );
-            })}
+            <SocialIcons />
           </div>
         </div>
         <div className="col-12 col-lg-6">

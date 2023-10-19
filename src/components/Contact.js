@@ -1,15 +1,12 @@
-import "../styles/Contact.css";
-import myImg from "../assets/images/about-1.png";
-import {
-  faEnvelope,
-  faPhone,
-  faShareNodes,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { socials } from "../socials";
-import { ThemeContext } from "../ThemeContext";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone, faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import SectionTitle from "./SectionTitle";
+import { ThemeContext } from "../ThemeContext";
+import myImg from "../assets/images/about-1.png";
+import "../styles/Contact.css";
+import SocialIcons from "../SocialIcons";
 
 export default function Contact() {
   const { theme } = React.useContext(ThemeContext);
@@ -17,10 +14,8 @@ export default function Contact() {
   return (
     <section id="contact" className="contact" data-theme={theme}>
       <div className="container glass m-auto">
-        <div className="section-title contact-title">
-          <span>{t("contact.contact")}</span>
-          <h2>{t("contact.contact")}</h2>
-        </div>
+        <SectionTitle title={t("contact.contact")} customClass="contact-title"/>
+
         <div className="row">
           {theme === "light" && (
             <div className="col-lg-5 text-center">
@@ -38,22 +33,11 @@ export default function Contact() {
                   <FontAwesomeIcon icon={faShareNodes} size="2x" />
                   <h3> {t("contact.socials")} </h3>
                   <div className="social-links">
-                    {socials.map((social) => {
-                      return (
-                        <a
-                          className="social-icon"
-                          key={social.url}
-                          href={social.url}
-                          target="_blank"
-                          alt={social.icon}
-                        >
-                          <FontAwesomeIcon icon={social.icon} size="2x" />
-                        </a>
-                      );
-                    })}
+                    <SocialIcons />
                   </div>
                 </div>
               </div>
+              
               <div className="col-md-6">
                 <div className="info-box mt-4">
                   <FontAwesomeIcon icon={faEnvelope} size="2x" />

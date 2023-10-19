@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    background: linear-gradient(54deg, rgba(24,32,33,1) 0%, rgba(85,138,144,1) 15%, rgba(101,187,196,1) 29%, #699a9f 50%, rgba(60,187,201,1) 77%, rgba(41,130,140,1) 100%);
+}
+
+[data-theme="dark"]{
+    background-color: #14161a;
+    color: #F0EFEB;
+
+}
