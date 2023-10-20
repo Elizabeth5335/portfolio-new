@@ -21,7 +21,7 @@ export default function NotFound() {
           <h1 className="error">404</h1>
           <h2 className="oops mb-3">{t("notFound.Oops")}</h2>
           <h4 className="message mb-5">{t("notFound.notExist")}</h4>
-          <Link className="home-btn" to="/">
+          <Link className="home-btn" to="/portfolio-new">
             {t("notFound.home")}
           </Link>
 
