@@ -18,7 +18,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/portfolio-new"
           element={
             <div className="App">
               <ThemeProvider>
