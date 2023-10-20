@@ -38,7 +38,7 @@ export default function HeroSection() {
             </div>
             <Row className="hero-row">
               <a
-                href="/CV_Yelyzaveta_Lazarieva.pdf"
+                href="/portfolio-new/CV_Yelyzaveta_Lazarieva.pdf"
                 download
                 className="col-12 col-sm-5 button text-center cv-button mb-3"
               >
