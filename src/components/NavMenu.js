@@ -13,6 +13,8 @@ export default function NavMenu() {
   const navRef = useRef(null);
   const prevScrollY = useRef(0);
 
+  const [expanded, setExpanded] = React.useState(false);
+
 const isMobile = window.innerWidth <= 992;
 
   useEffect(() => {
@@ -45,6 +47,7 @@ const isMobile = window.innerWidth <= 992;
       className="header-nav"
       expand="lg"
       data-theme={theme}
+      expanded={expanded}
     >
       <Navbar.Brand className="">
         <img className="navbar-brand nav-logo ms-3" src={theme === "dark" ? mylogo : logoDark} alt="logo" />
@@ -52,22 +55,23 @@ const isMobile = window.innerWidth <= 992;
       <Navbar.Toggle
         aria-controls="navbarSupportedContent"
         data-bs-toggle="collapse"
+        onClick={() => setExpanded(expanded ? false : "expanded")}
       />
       <Navbar.Collapse id="navbarSupportedContent">
-        <Nav className="mr-0">
-          <Nav.Link className="nav-link scrollto" href="#about">
+        <Nav className="mr-5">
+          <Nav.Link className="nav-link scrollto" href="#about" onClick={() => setExpanded(false)}>
             {t("navigation.about")}
           </Nav.Link>
-          <Nav.Link className="nav-link scrollto" href="#skills">
+          <Nav.Link className="nav-link scrollto" href="#skills" onClick={() => setExpanded(false)}>
             {t("navigation.skills")}
           </Nav.Link>
-          <Nav.Link className="nav-link scrollto" href="#resume">
+          <Nav.Link className="nav-link scrollto" href="#resume" onClick={() => setExpanded(false)}>
             {t("navigation.resume")}
           </Nav.Link>
-          <Nav.Link className="nav-link scrollto" href="#portfolio">
+          <Nav.Link className="nav-link scrollto" href="#portfolio" onClick={() => setExpanded(false)}>
             {t("navigation.portfolio")}
           </Nav.Link>
-          <Nav.Link className="nav-link scrollto" href="#contact">
+          <Nav.Link className="nav-link scrollto" href="#contact" onClick={() => setExpanded(false)}>
             {t("navigation.contact")}
           </Nav.Link>
           <Nav.Link

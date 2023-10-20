@@ -6,6 +6,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import SocialIcons from "../SocialIcons";
+import {Col, Container, Row} from "react-bootstrap"
 
 export default function NotFound() {
   const { t } = useTranslation("global");
@@ -14,8 +15,9 @@ export default function NotFound() {
 
   return (
     <div id="not-found" className="" data-theme={theme}>
-      <div className="row container not-found-container mx-auto">
-        <div className="col-12 col-lg-6 my-auto text-center">
+      <Container >
+        <Row className="not-found-container m-auto">
+        <Col xs={12} lg={6} className="my-auto text-center">
           <h1 className="error">404</h1>
           <h2 className="oops mb-3">{t("notFound.Oops")}</h2>
           <h4 className="message mb-5">{t("notFound.notExist")}</h4>
@@ -26,8 +28,8 @@ export default function NotFound() {
           <div className="not-found-socials mt-5 mx-auto">
             <SocialIcons />
           </div>
-        </div>
-        <div className="col-12 col-lg-6">
+        </Col>
+        <Col xs={12} lg={6}>
           <a
             href="https://www.youtube.com/watch?v=sHWEc-yxfb4&ab_channel=Simon%27sCat"
             target="_blank"
@@ -35,8 +37,10 @@ export default function NotFound() {
           >
             <img className="not-found-image" src={cat} alt="Simon's Cat" />
           </a>
-        </div>
-      </div>
+        </Col>
+        </Row>
+        
+      </Container>
     </div>
   );
 }

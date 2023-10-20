@@ -9,7 +9,6 @@
   .glass {
     background: #14161a;
     box-shadow: 0 8px 32px 0 rgba(178, 175, 164, 0.7);
-    padding: 2rem;
   }
 
   .contact-title span {
@@ -31,7 +30,7 @@
 
   .info-box {
     box-shadow: 0 0 30px rgba(178, 175, 164, 0.35);
-    margin: 3rem;
+    margin: 2rem;
   }
 
   .info-box a:hover{
@@ -55,12 +54,14 @@
   color: #f0efeb;
 }
 .glass {
-  width: 80%;
+  width: 90% !important;
   background: rgba( 240, 239, 235, 0.2 );
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
+  padding-top: 2rem;
+
 }
 
 .contact-img {
@@ -75,14 +76,14 @@
   color: #14161a;
   text-align: center;
   box-shadow: 0 0 30px rgba(105, 153, 158, 0.7);
-  padding: 20px 0 43px 0;
+  padding: 20px 0 30px 0;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
   color: #14161a;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .contact .info-box p {

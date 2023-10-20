@@ -113,3 +113,11 @@
   background: #fff;
   border: 2px solid #699a9f;
 }
+
+
+@media screen and (max-width: 1400px){
+  .blob-green,
+  .blob-pink {
+    display: none;
+  }  
+}

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Kreadon;
-  src: url(./assets/fonts/PlayfairDisplay-ExtraBold.ttf);
+  font-family: Vollkorn;
+  src: url(./assets/fonts/Vollkorn-VariableFont_wght.ttf);
 }
 
 @font-face {
@@ -19,7 +19,7 @@ h2,
 h3,
 h4,
 .section-title span {
-  font-family: "Kreadon", sans-serif;
+  font-family: "Vollkorn", sans-serif;
   font-size: larger;
 }
 

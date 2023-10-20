@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { certificates } from "./certificates";
 import SectionTitle from "../SectionTitle";
 import ResumeItem from "./ResumeItem";
+import {Col, Row, Container} from "react-bootstrap"
 
 export default function Resume() {
   const { t } = useTranslation("global");
@@ -14,14 +15,14 @@ export default function Resume() {
 
   return (
     <section id="resume" className="resume" data-theme={theme}>
-      <img className="blob-green" src={blobGreen} alt="" />
-      <img className="blob-pink" src={blobPink} alt="" />
+      {/* <img className="blob-green" src={blobGreen} alt="" />
+      <img className="blob-pink" src={blobPink} alt="" /> */}
 
-      <div className="container">
+      <Container>
         <SectionTitle title="resume.resume" customClass="resume-main-title" />
 
-        <div className="row">
-          <div className="col-lg-6">
+        <Row>
+          <Col lg={6}>
             <h3 className="resume-title">{t("resume.summary")}</h3>
 
             <ResumeItem
@@ -31,6 +32,7 @@ export default function Resume() {
                 t("resume.cities"),
                 <>
                   <a href="tel:+380991889215">+380 991 889 215</a>
+                  <br />
                   <a href="tel:+48695178074">+48 695 178 074</a>
                 </>,
                 <a href="mailto:lazareva15elizaveta@gmail.com">
@@ -53,8 +55,8 @@ export default function Resume() {
                 t("resume.prevJob5"),
               ]}
             />
-          </div>
-          <div className="col-lg-6">
+          </Col>
+          <Col lg={6}>
             <h3 className="resume-title">{t("resume.education")}</h3>
 
             <ResumeItem
@@ -84,9 +86,9 @@ export default function Resume() {
                 </div>
               ))}
             />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

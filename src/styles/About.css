@@ -161,3 +161,8 @@ canvas {
 .about-list li {
   flex-wrap: wrap;
 }
+
+.list-group-item{
+  background: transparent !important;
+  border: none !important;
+}

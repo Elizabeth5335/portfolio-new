@@ -5,6 +5,7 @@ import React from "react";
 import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../SectionTitle";
+import { Row } from "react-bootstrap"
 
 export default function Portfolio() {
   const { t } = useTranslation("global");
@@ -58,14 +59,14 @@ export default function Portfolio() {
             />
             <div className="image-text">
               <h4>{t(project.shortDesk)}</h4>
-              <div className="row mt-4">
+              <Row className="mt-4">
                 {project.technologies &&
                   project.technologies.map((technology) => (
                     <span key={technology} className="technology col-4">
                       {technology}
                     </span>
                   ))}
-              </div>
+              </Row>
             </div>
           </div>
         ))}

@@ -4,17 +4,18 @@ import { ThemeContext } from "../../ThemeContext";
 import CodeBlock from "./CodeBlock";
 import SectionTitle from "../SectionTitle";
 import SkillsList from "./SkillsList";
+import { Container } from "react-bootstrap"
 
 export default function Skills() {
   const { theme } = React.useContext(ThemeContext);
 
   return (
     <section id="skills" data-theme={theme}>
-      <div className="container">
+      <Container>
         <SectionTitle title="skills" customClass="skills-title" />
         <SkillsList />
         <CodeBlock />
-      </div>
+      </Container>
     </section>
   );
 }

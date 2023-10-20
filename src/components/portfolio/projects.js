@@ -21,7 +21,7 @@ const projects = [
     name: "portfolio.resume",
     shortDesk: "portfolio.aboutR",
     description: "portfolio.descR",
-    technologies: ["HTML", "CSS", "React", "Bootstrap 5"],
+    technologies: ["HTML", "CSS", "Bootstrap 5"],
     link: "https://github.com/Elizabeth5335/Resume",
     gitHub: "https://github.com/Elizabeth5335/Resume",
   },
