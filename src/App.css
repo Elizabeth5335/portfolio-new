@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Vollkorn;
+  src: url(./assets/fonts/Vollkorn-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Kreadon-regular;
+  src: url(./assets/fonts/Raleway-Regular.ttf);
+}
+
+.App {
+  overflow-x: hidden;
+  font-family: "Kreadon-regular", sans-serif;
+  font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+.section-title span {
+  font-family: "Vollkorn", sans-serif;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: #41757a;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #14161a;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #a9ccd0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+section {
+  padding: 3rem 0;
+}

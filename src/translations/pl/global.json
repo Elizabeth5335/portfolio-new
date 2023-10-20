@@ -1,0 +1,94 @@
+{
+  "navigation": {
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "light": "Jasny ",
+    "dark": "Ciemny ",
+    "theme": "motyw"
+  },
+  "hero": {
+    "hello": "Cześć",
+    "I": "Jestem ",
+    "Yelyzaveta": "Yelyzaveta Lazarieva",
+    "description": "Jestem Frontend Developerem z rocznym doświadczeniem komercyjnym. Jestem zakochana w React i pasjonuję się poznawaniem nowych technologii.",
+    "hire": "Zatrudnij mnie",
+    "download": "Pobierz CV"
+  },
+  "about": {
+    "about": "O MNIE",
+    "I-am": "Jestem nastawiony na wynik",
+    "Frontend-developer": "Frontend developer",
+    "with-one-year": "z rocznym doświadczeniem komercyjnym i nieprzerwaną czteroletnią podróżą polegającą na nauce i doskonaleniu najczęściej używanych technologii i narzędzi",
+    "I-can": "Umiem tworzyć od podstaw adaptacyjne strony internetowe dla różnych przeglądarek, używając HTML, CSS (SASS), JS, Yii2, Bootstrap, Angular i React.",
+    "passion": "Pasjonuję się ",
+    "passion2": ", herbatą, językami obcymi, anime i kotami.",
+    "Name": "Imię",
+    "Yelyzaveta": "Yelyzaveta Lazarieva",
+    "Website": "Website",
+    "Birthday": "Urodziny",
+    "Phone": "Telefon",
+    "Age": "Wiek",
+    "City": "Miasto",
+    "Kharkiv": "Charków, Ukraina",
+    "Łódź": "Łódź, Polska",
+    "Education": "Wykształcenie",
+    "Karazin": "Charkowski Uniwersytet Narodowy im. Wasyla Karazina ",
+    "antistress": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (najedź kursorem, aby wejść w interakcję)"
+  },
+
+  "resume": {
+    "resume": "Resume",
+    "summary": "Streszczenie",
+    "Yelyzaveta": "Yelyzaveta Lazarieva",
+    "graduated": "Niedawno ukończyłam Uniwersytet Narodowy im. W.N.Karazina w Charkowie. Mam roczne doświadczenie komercyjne w rozwoju Frontendu.",
+    "cities": "Charków, Ukraina / Łódź, Polska",
+    "Lodz": "Łódź, Polska",
+    "experience": "Doświadczenie zawodowe",
+    "June": "Czerwiec",
+    "prevJob1": "Współpraca przy projektach wykorzystujących frameworki Yii2 i Angular.",
+    "prevJob2": "Rewitalizacja istniejących projektów poprzez integrację nowoczesnych technologii.",
+    "prevJob3": "Przekształcono projekty w responsywne układy dla optymalnego doświadczenia użytkownika.",
+    "prevJob4": "Ulepszono istniejące funkcjonalności w celu osiągnięcia wyższych standardów wydajności.",
+    "prevJob5": "Opracowałem modułową, wielostronicową witrynę internetową w Angular, która uwzględnia zasady responsywnego projektowania.",
+    "education": "Wykształcenie",
+    "Karazin": "UNIWERSYTET NARODOWY IM. W.N. KARAZINA W CHARKOWIE",
+    "facultyK": "Wydział Informatyki, Specjalność: Cyberbezpieczeństwo",
+    "LodzUni": "UNIVERSYTET ŁÓDZKI",
+    "facultyL": "Wydział Informatyki (jako student mobilności)",
+    "febJul": "Luty - Lipiec",
+    "courses": "Kursy"
+  },
+  "skills": "Umiejętności",
+  "portfolio": {
+    "portfolio": "Portfolio",
+    "aboutQ": "Strona internetowa z quizami o anime",
+    "descQ": "Quizzical pobiera 5 pytań z interfejsu API Trivia. Możesz wybrać jedną z 5 odpowiedzi. Po ich sprawdzeniu możesz zobaczyć swój wynik. Postaraj się zdobyć 5/5!",
+    "resume": "Resume",
+    "aboutR": "Projekt dla pokazania umiejętności w zakresie bootstrap 5",
+    "descR": "To jednostronicowa witryna internetowa z układem adaptacyjnym. Została napisana przy użyciu HTML (bootstrap 5), CSS i trochę JavaScript do animacji. Celem tego projektu było pokazanie moich umiejętności pracy z bootstrap 5: create responsywne tabele, długie opisy, obrazy i tak dalej.",
+    "meta": "Meta projekt",
+    "aboutM": "Imitacja strony portfolio",
+    "descM": "To był ostatni projekt kursu 'Advanced React' firmy Meta. Celem było pokazanie umiejętności React. Najbardziej dumny jestem z wdrożenia formularza..",
+    "aboutG": "Strona internetowa z trzema grami JS",
+    "descG": "To strona internetowa z trzema różnymi grami napisanymi w vanilla js. Możesz grać w Wordle, Breakout i Tetris!",
+    "descP": "To była strona-portfolio, której celem było zademonstrowanie moich umiejętności, a także poprzednich projektów. Moje ulubione funkcje to wykrywanie języka, galeria zdjęć i formularz kontaktowy.",
+    "aboutP":"Moja poprzednia strona portfolio",
+    "about": "O projekcie",
+    "repo": "Link do repo: ",
+    "technologies": "Technologie",
+    "website": "Strona internetowa"
+  },
+  "contact":{
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "socials": "Profile społecznościowe"
+  },
+  "notFound":{
+    "Oops":"Ups!",
+    "notExist":"Wygląda na to, że ta strona nie istnieje",
+    "home":"Do domu"
+  }
+}
