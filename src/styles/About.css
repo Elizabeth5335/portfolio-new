@@ -165,4 +165,5 @@ canvas {
 .list-group-item{
   background: transparent !important;
   border: none !important;
+  color: inherit !important;
 }

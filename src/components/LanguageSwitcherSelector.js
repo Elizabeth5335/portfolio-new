@@ -35,13 +35,13 @@ export default function LanguageSwitcherSelector() {
     ));
 
   return (
-    <Nav.Link id="lang-btn">
+    <div className="nav-link" id="lang-btn">
       <Dropdown className="lang">
       <Dropdown.Toggle variant={theme} id="language-dropdown">
         {languageName}
       </Dropdown.Toggle>
       <Dropdown.Menu>{languageOptions}</Dropdown.Menu>
     </Dropdown>
-    </Nav.Link>
+    </div>
   );
 }

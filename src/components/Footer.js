@@ -11,7 +11,7 @@ function Footer() {
 
   return (
     <footer data-theme={theme}>
-      <div>&copy; {currentYear} Yelyzaveta Lazarieva. All Rights Reserved</div>
+      <div className='text-center'>&copy; {currentYear} Yelyzaveta Lazarieva. All Rights Reserved</div>
     </footer>
   );
 }
