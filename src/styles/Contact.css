@@ -1,0 +1,128 @@
+#contact {
+  background: rgb(105,154,159);
+  background: linear-gradient(54deg, rgba(24,32,33,1) 0%, rgba(85,138,144,1) 15%, rgba(101,187,196,1) 29%, #699a9f 50%, rgba(60,187,201,1) 77%, rgba(41,130,140,1) 100%);
+} 
+
+
+#contact[data-theme="dark"] {
+  background: var(--background-dark);
+  .glass {
+    background: #14161a;
+    box-shadow: 0 8px 32px 0 rgba(178, 175, 164, 0.7);
+  }
+
+  .contact-title span {
+    color: #999584;
+  }
+  .contact-title h2,
+  h1 {
+    color: #F0EFEB;
+  }
+  .info-box,
+  .info-box h3,
+  a {
+    color: #f0efeb;
+  }
+
+  .info-box, .info-box h3{
+    color: #F0EFEB;
+  }
+
+  .info-box {
+    box-shadow: 0 0 30px rgba(178, 175, 164, 0.35);
+    margin: 2rem;
+  }
+
+  .info-box a:hover{
+    color: #999584;
+  }
+
+  .social-links a {
+    color: #F0EFEB;
+    border: 1px solid #F0EFEB;
+  }
+  
+  .social-links a:hover {
+    border-color: #999584;
+    background: #999584;
+    color: #F0EFEB;
+  }
+  
+}
+
+.contact-title span {
+  color: #f0efeb;
+}
+.glass {
+  width: 90% !important;
+  background: rgba( 240, 239, 235, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding-top: 2rem;
+
+}
+
+.contact-img {
+  max-height: 500px;
+}
+
+#contact {
+  padding-bottom: 50px;
+}
+
+.contact .info-box {
+  color: #14161a;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(105, 153, 158, 0.7);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #14161a;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .social-links {
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.contact a {
+  color: #14161a;
+}
+
+.contact a:hover {
+  color: #f0efeb;
+  text-decoration: none;
+}
+
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #14161a;
+  line-height: 1;
+  margin: auto;
+  transition: 0.3s;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid #14161a;
+}
+
+.contact .social-links a:hover {
+  border-color: #f0efeb;
+  background: #f0efeb;
+}
