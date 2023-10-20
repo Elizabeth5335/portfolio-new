@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio-new/static/css/main.1d0b7129.css",
+    "main.js": "/portfolio-new/static/js/main.8a10e5db.js",
+    "static/js/787.3af1eb09.chunk.js": "/portfolio-new/static/js/787.3af1eb09.chunk.js",
+    "static/media/resume.png": "/portfolio-new/static/media/resume.88f95f0bb2ba500e6967.png",
+    "static/media/portfolio.png": "/portfolio-new/static/media/portfolio.e038e481b4292614442e.png",
+    "static/media/hero.png": "/portfolio-new/static/media/hero.8dc39be3508887d0b152.png",
+    "static/media/games.png": "/portfolio-new/static/media/games.032086ad91f9e36a3670.png",
+    "static/media/Vollkorn-VariableFont_wght.ttf": "/portfolio-new/static/media/Vollkorn-VariableFont_wght.5fd7134d062d65d572e2.ttf",
+    "static/media/about-1.png": "/portfolio-new/static/media/about-1.c3bc8fd6b99980d2e2e0.png",
+    "static/media/Raleway-Regular.ttf": "/portfolio-new/static/media/Raleway-Regular.c15b0bf7b86f34335251.ttf",
+    "static/media/cat.png": "/portfolio-new/static/media/cat.d237e0e9eeee6f390f1f.png",
+    "static/media/meta-project.png": "/portfolio-new/static/media/meta-project.0bd8bbbfb46b066365e0.png",
+    "static/media/quizzical.png": "/portfolio-new/static/media/quizzical.2b2253a4d015ae94f164.png",
+    "static/media/yii2.png": "/portfolio-new/static/media/yii2.d597814d7281db381755.png",
+    "static/media/yii2-dark.png": "/portfolio-new/static/media/yii2-dark.a0f3787530ba27c56bd5.png",
+    "index.html": "/portfolio-new/index.html",
+    "static/media/getFetch.cjs": "/portfolio-new/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.1d0b7129.css.map": "/portfolio-new/static/css/main.1d0b7129.css.map",
+    "main.8a10e5db.js.map": "/portfolio-new/static/js/main.8a10e5db.js.map",
+    "787.3af1eb09.chunk.js.map": "/portfolio-new/static/js/787.3af1eb09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d0b7129.css",
+    "static/js/main.8a10e5db.js"
+  ]
+}
