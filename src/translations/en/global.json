@@ -13,7 +13,8 @@
     "hello": "Hello",
     "I": "I am ",
     "Yelyzaveta": "Yelyzaveta Lazarieva",
-    "description": "I am a Frontend Developer with one year of commercial experience. I am in love with React and passionate about learning new technologies.",
+    "quote": "It always seems impossible until it’s done",
+    "description": "Frontend Developer with one year of commercial experience. I am in love with React and passionate about learning new technologies.",
     "hire": "Hire me now",
     "download": "Download CV"
   },
@@ -22,7 +23,7 @@
     "I-am": "I am a result-driven",
     "Frontend-developer": "Frontend developer",
     "with-one-year": "with one year of commercial experience and a continuous four-year journey of learning and mastering the most widely used technologies and tools.",
-    "I-can": "I can create cross-browser adaptive websites from scratch using HTML, CSS (SASS), JS, Yii2, Bootstrap, Angular and React.",
+    "I-can": "If you need an adaptive cross-browser website - feel free to contact me. My stack of technologies includes HTML, CSS (SASS), JS, Yii2, Bootstrap, Angular and React.",
     "passion": "I am passionate about ",
     "passion2": ", tea, foreign languages, anime, and cats.",
     "Name": "Name",
@@ -36,7 +37,8 @@
     "Łódź": "Łódź, Poland",
     "Education": "Education",
     "Karazin": "V.N.Karazin Kharkiv National University",
-    "antistress": "P.S. our life is quite stressfull, so here's antistress for you (hover to interact)"
+    "antistress": "P.S. our life is quite stressfull, so here's antistress for you (hover to interact)",
+    "antistress-mobile": "P.S. our life is quite stressfull, so here's antistress for you (move your finger to interact)"
   },
   "resume": {
     "resume": "Resume",
@@ -63,7 +65,7 @@
   "skills": "Skills",
   "portfolio": {
     "portfolio": "Portfolio",
-    "aboutQ": "Website with quizes about anime",
+    "aboutQ": "Website with quizzes about anime",
     "descQ": "Quizzical gets 5 questions from the Trivia API. You can select one of 5 answers. After they are checked you can see your score. Try your best to get 5/5!",
     "resume": "Resume",
     "aboutR": "Project to show my bootstrap 5 skills",

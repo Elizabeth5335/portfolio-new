@@ -5,7 +5,7 @@ import React from "react";
 import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../SectionTitle";
-import { Row } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap";
 
 export default function Portfolio() {
   const { t } = useTranslation("global");
@@ -44,50 +44,52 @@ export default function Portfolio() {
     <section id="portfolio" data-theme={theme}>
       <SectionTitle title="portfolio.portfolio" customClass="" />
 
-      <div className="gallery">
-        {projects.map((project) => (
-          <div
-            className="gallery-image"
-            onClick={(e) => openDetails(project, e)}
-            key={project.id}
-          >
-            <div className="image-overlay"></div>
-            <img
-              src={project.url}
-              alt={t(project.name)}
-              style={{ width: "100%" }}
-            />
-            <div className="image-text">
-              <h4>{t(project.shortDesk)}</h4>
-              <Row className="mt-4">
-                {project.technologies &&
-                  project.technologies.map((technology) => (
-                    <span key={technology} className="technology col-4">
-                      {technology}
-                    </span>
-                  ))}
-              </Row>
+      <Container>
+        <div className="gallery">
+          {projects.map((project) => (
+            <div
+              className="gallery-image"
+              onClick={(e) => openDetails(project, e)}
+              key={project.id}
+            >
+              <div className="image-overlay"></div>
+              <img
+                src={project.url}
+                alt={t(project.name)}
+                style={{ width: "100%" }}
+              />
+              <div className="image-text">
+                <h4>{t(project.shortDesk)}</h4>
+                <Row className="mt-4">
+                  {project.technologies &&
+                    project.technologies.map((technology) => (
+                      <span key={technology} className="technology col-4">
+                        {technology}
+                      </span>
+                    ))}
+                </Row>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {selectedProject && (
-        <>
-          <div className="overlay"></div>
+        {selectedProject && (
+          <>
+            <div className="overlay"></div>
 
-          <Details
-            name={selectedProject.name}
-            url={selectedProject.url}
-            shortDesk={selectedProject.shortDesk}
-            description={selectedProject.description}
-            technologies={selectedProject.technologies}
-            link={selectedProject.link}
-            gitHub={selectedProject.gitHub}
-            closeDetails={closeDetails}
-          />
-        </>
-      )}
+            <Details
+              name={selectedProject.name}
+              url={selectedProject.url}
+              shortDesk={selectedProject.shortDesk}
+              description={selectedProject.description}
+              technologies={selectedProject.technologies}
+              link={selectedProject.link}
+              gitHub={selectedProject.gitHub}
+              closeDetails={closeDetails}
+            />
+          </>
+        )}
+      </Container>
     </section>
   );
 }

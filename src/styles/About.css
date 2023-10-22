@@ -1,10 +1,6 @@
 #about {
   background-color: #f0efeb;
-  background: linear-gradient(
-    90deg,
-    rgba(240, 239, 235, 1) 0%,
-    rgba(255, 254, 254, 1) 100%
-  );
+  padding: 3rem 0 0 0;
 
   /* background-image: url('../assets/images/about-bg.png');
   background-size: cover;
@@ -21,6 +17,14 @@
   .about-title h2 {
     color: #e2c7c7;
   }
+
+  .list-group-item a{
+    color: #e2c7c7
+  }
+
+  .list-group-item a:hover{
+    color: #eee6e6;
+  }
 }
 .particle-container {
   width: 800px;
@@ -28,12 +32,15 @@
   max-width: 100%;
   max-height: 100%;
   position: relative;
+  margin-top: 0.5rem !important;
+
 }
 
 canvas {
   border: 3px solid   #020202;
   background-color: #14161a;
   border-radius: 24px;
+
 }
 
 #tsparticles {
@@ -91,59 +98,10 @@ canvas {
   margin: 0 10px;
 }
 
-.about ul i {
-  font-size: 16px;
-  margin-right: 5px;
-  color: #336f18;
-  line-height: 0;
-}
-
 .about p:last-child {
   margin-bottom: 0;
 }
 
-.about .count-box {
-  width: 100%;
-}
-
-.about .count-box i {
-  display: block;
-  font-size: 36px;
-  color: #336f18;
-  float: left;
-  line-height: 0;
-}
-
-.about .count-box span {
-  font-size: 36px;
-  line-height: 30px;
-  display: block;
-  font-weight: 700;
-  color: #3b434a;
-  margin-left: 50px;
-}
-
-.about .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #5d6a75;
-}
-
-.about .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #5d6a75;
-  font-size: 15px;
-  /* font-family: "Satisfy", serif; */
-  transition: ease-in-out 0.3s;
-}
-
-.about .count-box a:hover {
-  color: #82909c;
-}
 
 .education svg {
   margin: auto 0;
@@ -155,7 +113,7 @@ canvas {
 
 
 .main-row {
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about-list li {
@@ -166,4 +124,18 @@ canvas {
   background: transparent !important;
   border: none !important;
   color: inherit !important;
+}
+
+.list-group-item svg{
+  margin-right: 0.5rem;
+}
+
+.about-desc{
+  /* background-color: #0e3034;
+  color: #fff; */
+  text-align: center;
+  max-width: 800px;
+  /* text-align: justify; */
+  padding: 0 3rem !important;
+  /* margin-bottom: 2rem; */
 }

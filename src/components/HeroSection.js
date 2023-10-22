@@ -20,7 +20,6 @@ export default function HeroSection() {
 
   return (
     <div data-theme={theme}>
-      {/* <Image className="blob-left" src={blobLeft} alt="" /> */}
       <Container id="hero" className="row m-auto">
         <Row>
           <Col md={5} className="order-md-2">
@@ -30,12 +29,17 @@ export default function HeroSection() {
             <h2>{t("hero.hello")}!</h2>
             <h1 className="mb-5">
               {t("hero.I")}
-              <span className={`${!isMobile&&"typing"} green`}> {t("hero.Yelyzaveta")}</span>
+              <span className={`${!isMobile && "typing"} green`}>
+                {" "}
+                {t("hero.Yelyzaveta")}
+              </span>
             </h1>
             <p>{t("hero.description")}</p>
+            
             <div className="socials">
               <SocialIcons />
             </div>
+
             <Row className="hero-row">
               <a
                 href="/CV_Yelyzaveta_Lazarieva.pdf"
@@ -51,58 +55,10 @@ export default function HeroSection() {
                 {t("hero.hire")}
               </Button>
             </Row>
+            
           </Col>
         </Row>
       </Container>
     </div>
   );
 }
-
-// export default function HeroSection() {
-//   const { t } = useTranslation("global");
-
-//   const { theme } = React.useContext(ThemeContext);
-
-//   const scroll = () => {
-//     const section = document.querySelector("#contact");
-//     section.scrollIntoView({ behavior: "smooth", block: "start" });
-//   };
-
-//   return (
-//     <div data-theme={theme}>
-//       <img className="blob-left" src={blobLeft} alt="" />
-//       <section id="hero" className="container row m-auto">
-//         <div className="col-12 col-md-5 order-md-2">
-//           <img className=" img-fluid" src={hero} alt="Yelyzaveta Lazarieva" />
-//         </div>
-//         <div className="col-12 col-md-7 p-3 order-md-1">
-//           <h2>{t("hero.hello")}!</h2>
-//           <h1 className="mb-5">
-//             {t("hero.I")}
-//             <span className="typing"> {t("hero.Yelyzaveta")}</span>
-//           </h1>
-//           <p>{t("hero.description")}</p>
-//           <div className="socials">
-//             <SocialIcons />
-//           </div>
-//           <div className="row">
-//             <a
-//               href="/CV_Yelyzaveta_Lazarieva.pdf"
-//               download
-//               className="col-12 col-sm-5 button cv-button mb-3"
-//             >
-//               {t("hero.download")}
-//             </a>
-
-//             <button
-//               className="col-12 col-sm-5 button hire-button mb-3"
-//               onClick={scroll}
-//             >
-//               {t("hero.hire")}
-//             </button>
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }

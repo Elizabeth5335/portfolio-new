@@ -5,8 +5,9 @@ export default function SectionTitle(props) {
 
   return (
     <div className={`section-title ${props.customClass}`}>
-      <span>{t(props.title)}</span>
-      <h2>{t(props.title)}</h2>
+      {/* <span>{t(props.title)}</span> */}
+      <h1 className="mb-5 m-auto text-center">{t(props.title).toUpperCase()}</h1>
+
     </div>
   );
 }

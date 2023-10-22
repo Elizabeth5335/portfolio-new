@@ -13,7 +13,8 @@
     "hello": "Cześć",
     "I": "Jestem ",
     "Yelyzaveta": "Yelyzaveta Lazarieva",
-    "description": "Jestem Frontend Developerem z rocznym doświadczeniem komercyjnym. Jestem zakochana w React i pasjonuję się poznawaniem nowych technologii.",
+    "quote": "Zawsze wydaje się niemożliwe, dopóki to nie zostanie zrobione.",
+    "description": "Frontend Developer z rocznym doświadczeniem komercyjnym. Jestem zakochana w React i pasjonuję się poznawaniem nowych technologii.",
     "hire": "Zatrudnij mnie",
     "download": "Pobierz CV"
   },
@@ -21,8 +22,8 @@
     "about": "O MNIE",
     "I-am": "Jestem nastawiony na wynik",
     "Frontend-developer": "Frontend developer",
-    "with-one-year": "z rocznym doświadczeniem komercyjnym i nieprzerwaną czteroletnią podróżą polegającą na nauce i doskonaleniu najczęściej używanych technologii i narzędzi",
-    "I-can": "Umiem tworzyć od podstaw adaptacyjne strony internetowe dla różnych przeglądarek, używając HTML, CSS (SASS), JS, Yii2, Bootstrap, Angular i React.",
+    "with-one-year": "z rocznym doświadczeniem komercyjnym i nieprzerwaną czteroletnią podróżą polegającą na nauce i doskonaleniu najczęściej używanych technologii i narzędzi.",
+    "I-can": "Jeśli potrzebujesz adaptacyjnej strony internetowej dla różnych przeglądarek - skontaktuj się ze mną. Mój stos technologii obejmuje HTML, CSS (SASS), JS, Yii2, Bootstrap, Angular i React.",
     "passion": "Pasjonuję się ",
     "passion2": ", herbatą, językami obcymi, anime i kotami.",
     "Name": "Imię",
@@ -36,7 +37,9 @@
     "Łódź": "Łódź, Polska",
     "Education": "Wykształcenie",
     "Karazin": "Charkowski Uniwersytet Narodowy im. Wasyla Karazina ",
-    "antistress": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (najedź kursorem, aby wejść w interakcję)"
+    "antistress": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (najedź kursorem, aby wejść w interakcję)",
+    "antistress-mobile": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (poruszaj palcem, aby wejść w interakcję)"
+
   },
 
   "resume": {

@@ -102,6 +102,10 @@ nav {
   .toggle-icon{
     color: var(--color-light);
   }
+  .dropdown-menu a:hover{
+    background: transparent !important;
+    color: #699a9f !important;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link{

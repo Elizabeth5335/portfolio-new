@@ -140,3 +140,32 @@
   font-size: inherit;
   border: none;
 }
+
+
+blockquote {
+  border-left: 5px solid #0e3034;
+  padding: 1.5rem 3rem;
+  position: relative;
+  }
+/* 
+  blockquote:before {
+  content: "\201C";
+  font-family: serif;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: #fffefe;
+  background: #0e3034;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  line-height: 1.35;
+  text-align: center;
+  } */
+  blockquote p {
+  font-size: x-large;
+  }
+  blockquote cite {
+  font-style: normal;
+  }

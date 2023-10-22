@@ -11,6 +11,7 @@ export default function SocialIcons() {
             key={social.url}
             href={social.url}
             target="_blank"
+            aria-label={social.desc}
           >
             <FontAwesomeIcon icon={social.icon} size="2x" />
           </a>

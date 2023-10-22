@@ -12,18 +12,20 @@ export default function About() {
 
   return (
     <section id="about" data-theme={theme}>
-      <div className="about-content">
-        <SectionTitle title="about.about" customClass="about-title" />
-        <Container>
+      <Container>
+        <div className="about-content">
+          <SectionTitle title="about.about" customClass="about-title" />
+          <Container className="about-desc">
+            <AboutDescription />
+          </Container>
           <Row className="main-row m-auto about">
-            <Col xs={12} lg={8} className="mb-auto">
-              <AboutDescription />
+            <Col xs={12} lg={8} className="mt-0">
               <AboutList />
             </Col>
             <MyParticle />
           </Row>
-        </Container>
-      </div>
+        </div>{" "}
+      </Container>
     </section>
   );
 }

@@ -7,10 +7,7 @@ export default function AboutDescription() {
     <>
       <p>
         {t("about.I-am")} <strong>{t("about.Frontend-developer")}</strong>{" "}
-        {t("about.with-one-year")}
-      </p>
-      <p>{t("about.I-can")}</p>
-      <p>
+        {t("about.with-one-year")} {t("about.I-can")} <br />
         {t("about.passion")}
         <em>React</em>
         {t("about.passion2")}
