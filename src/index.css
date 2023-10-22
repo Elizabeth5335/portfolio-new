@@ -1,0 +1,23 @@
+:root{
+  --background-dark: #14161a;
+  --color-light: #F0EFEB;
+}
+
+
+body {
+  margin: 0;
+  padding-top: 64px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: #699a9f;
+}
+
+[data-theme="dark"]{
+  background-color: var(--background-dark);
+  color: var(--color-light);
+}
+
