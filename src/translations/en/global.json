@@ -30,7 +30,7 @@
     "Yelyzaveta": "Yelyzaveta Lazarieva",
     "Website": "Website",
     "Phone": "Phone",
-    "Birthday":"Birthday",
+    "Birthday": "Birthday",
     "Age": "Age",
     "City": "City",
     "Kharkiv": "Kharkiv, Ukraine",
@@ -44,23 +44,23 @@
     "resume": "Resume",
     "summary": "Summary",
     "Yelyzaveta": "Yelyzaveta Lazarieva",
-    "graduated":"Recently I graduated from V.N.Karazin Kharkiv National University. I have one year of commercial experience in Frontend development.",
-    "cities":"Kharkiv, Ukraine / Łódź, Poland",
-    "Lodz":"Łódź, Poland",
-    "experience":"Professional Experience",
-    "June":"June",
-    "prevJob1":"Collaborated on projects involving Yii2 and Angular frameworks",
-    "prevJob2":"Revitalized legacy projects through integration of modern technologies.",
-    "prevJob3":"Transformed designs into responsive layouts for optimal user experience.",
-    "prevJob4":"Enhanced existing functionalities to achieve higher performance standards.",
-    "prevJob5":"Developed a modular, multiple-page website in Angular that incorporated responsive design principles.",
-    "education":"Education",
-    "Karazin":"V.N.KARAZIN KHARKIV NATIONAL UNIVERSITY",
-    "facultyK":"Faculty of Computer Science , Speciality: Cyber-security",
-    "LodzUni":"UNIVERSITY OF ŁÓDŹ",
-    "facultyL":"Faculty of Computer Science (as a mobility student)",
-    "febJul":"February - July",
-    "courses":"Courses"
+    "graduated": "Recently I graduated from V.N.Karazin Kharkiv National University. I have one year of commercial experience in Frontend development.",
+    "cities": "Kharkiv, Ukraine / Łódź, Poland",
+    "Lodz": "Łódź, Poland",
+    "experience": "Professional Experience",
+    "June": "June",
+    "prevJob1": "Collaborated on projects involving Yii2 and Angular frameworks",
+    "prevJob2": "Revitalized legacy projects through integration of modern technologies.",
+    "prevJob3": "Transformed designs into responsive layouts for optimal user experience.",
+    "prevJob4": "Enhanced existing functionalities to achieve higher performance standards.",
+    "prevJob5": "Developed a modular, multiple-page website in Angular that incorporated responsive design principles.",
+    "education": "Education",
+    "Karazin": "V.N.KARAZIN KHARKIV NATIONAL UNIVERSITY",
+    "facultyK": "Faculty of Computer Science , Speciality: Cyber-security",
+    "LodzUni": "UNIVERSITY OF ŁÓDŹ",
+    "facultyL": "Faculty of Computer Science (as a mobility student)",
+    "febJul": "February - July",
+    "courses": "Courses"
   },
   "skills": "Skills",
   "portfolio": {
@@ -76,21 +76,21 @@
     "aboutG": "Website with three JS games",
     "descG": "It is a website with three different games written with vanilla js. You can play Wordle, Breakout and Tetris!",
     "descP": "It was a website-portfolio which aim was to demonstrate my skills as well as previous projects. My favourite features are language detection, image gallery and contact form.",
-    "aboutP":"My previous portfolio website",
+    "aboutP": "My previous portfolio website",
     "about": "About",
     "repo": "Link to repo: ",
     "technologies": "Technologies",
     "website": "Website"
   },
-  "contact":{
+  "contact": {
     "contact": "Contact",
     "phone": "Phone",
     "socials": "Social Profiles"
   },
-  "notFound":{
-    "Oops":"Oops!",
-    "notExist":"It looks like this page doesn't exist",
-    "home":"Home"
-  }
-
+  "notFound": {
+    "Oops": "Oops!",
+    "notExist": "It looks like this page doesn't exist",
+    "home": "Home"
+  },
+  "simon": "Link to Simon's cat on YouTube"
 }

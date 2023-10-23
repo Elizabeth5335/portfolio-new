@@ -34,8 +34,9 @@ export default function NotFound() {
             href="https://www.youtube.com/watch?v=sHWEc-yxfb4&ab_channel=Simon%27sCat"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={t("simon")}
           >
-            <img className="not-found-image" src={cat} alt="Simon's Cat" />
+            <img className="not-found-image img-fluid" src={cat} alt="Simon's Cat" />
           </a>
         </Col>
         </Row>
