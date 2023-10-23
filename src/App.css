@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  font-family: Kreadon-regular;
+  font-family: Raleway-regular;
   src: url(./assets/fonts/Raleway-Regular.ttf);
 }
 
 .App {
   overflow-x: hidden;
-  font-family: "Kreadon-regular", sans-serif;
+  font-family: "Raleway-regular", sans-serif;
   font-size: large;
 }
 

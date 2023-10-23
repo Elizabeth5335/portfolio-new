@@ -6,13 +6,13 @@
 #portfolio[data-theme="dark"] {
   background: #14161a;
 
-  .section-title span {
+  /* .section-title span {
     color: #0e3034;
   }
   .section-title h2,
   h1 {
     color: #699a9f;
-  }
+  } */
 
   .overlay,
   .details {
