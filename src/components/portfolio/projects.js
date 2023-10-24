@@ -26,17 +26,6 @@ const projects = [
     gitHub: "https://github.com/Elizabeth5335/Resume",
   },
   {
-    id: 3,
-    url: project,
-    name: "portfolio.meta",
-    shortDesk: "portfolio.aboutM",
-    description:
-      "portfolio.descM",
-    technologies: ["HTML", "CSS", "React", "Chakra UI", "Formik"],
-    link: "https://elizabeth5335.github.io/quizzical/",
-    gitHub: "https://github.com/Elizabeth5335/quizzical",
-  },
-  {
     id: 4,
     url: portfolio,
     name: "portfolio.portfolio",
