@@ -45,7 +45,7 @@ const projects = [
     shortDesk: "portfolio.aboutT",
     description: "portfolio.descT",
     technologies: ["HTML", "CSS", "React", "Firebase"],
-    link: "https://tournament-r6-ua.web.app/",
+    link: "https://r6-tournament-ua.web.app/",
     gitHub: "https://github.com/Elizabeth5335/tournament",
   },
   {
