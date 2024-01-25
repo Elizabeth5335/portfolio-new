@@ -80,7 +80,10 @@
     "about": "About",
     "repo": "Link to repo: ",
     "technologies": "Technologies",
-    "website": "Website"
+    "website": "Website",
+    "tournament": "R6 Tournament",
+    "descT": "It's a website for an eSports tournament. Interesting features: side navigation menu, data from the database (Firebase) to ensure the possibility of changing information about the tournament at any time.",
+    "aboutT":"Website for an eSports tournament"
   },
   "contact": {
     "contact": "Contact",

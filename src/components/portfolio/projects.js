@@ -3,6 +3,7 @@ import project from "../../assets/images/meta-project.png";
 import portfolio from "../../assets/images/portfolio.png";
 import quizzical from "../../assets/images/quizzical.png";
 import resume from "../../assets/images/resume.png";
+import tournament from "../../assets/images/tournament.png";
 
 const projects = [
   {
@@ -17,16 +18,6 @@ const projects = [
   },
   {
     id: 2,
-    url: resume,
-    name: "portfolio.resume",
-    shortDesk: "portfolio.aboutR",
-    description: "portfolio.descR",
-    technologies: ["HTML", "CSS", "Bootstrap 5"],
-    link: "https://github.com/Elizabeth5335/Resume",
-    gitHub: "https://github.com/Elizabeth5335/Resume",
-  },
-  {
-    id: 4,
     url: portfolio,
     name: "portfolio.portfolio",
     shortDesk: "portfolio.aboutP",
@@ -37,7 +28,7 @@ const projects = [
     gitHub: "https://github.com/Elizabeth5335/portfolio",
   },
   {
-    id: 5,
+    id: 3,
     url: games,
     name: "Gamesss",
     shortDesk: "portfolio.aboutG",
@@ -47,6 +38,28 @@ const projects = [
     link: "https://elizabeth5335.github.io/Games/",
     gitHub: "https://github.com/Elizabeth5335/games",
   },
+  {
+    id: 4,
+    url: tournament,
+    name: "portfolio.tournament",
+    shortDesk: "portfolio.aboutT",
+    description: "portfolio.descT",
+    technologies: ["HTML", "CSS", "React", "Firebase"],
+    link: "https://tournament-r6-ua.web.app/",
+    gitHub: "https://github.com/Elizabeth5335/tournament",
+  },
+  {
+    id: 5,
+    url: resume,
+    name: "portfolio.resume",
+    shortDesk: "portfolio.aboutR",
+    description: "portfolio.descR",
+    technologies: ["HTML", "CSS", "Bootstrap 5"],
+    link: "https://github.com/Elizabeth5335/Resume",
+    gitHub: "https://github.com/Elizabeth5335/Resume",
+  },
+  
+  
 ];
 
 export default projects;

@@ -79,7 +79,10 @@
     "about": "O projekcie",
     "repo": "Link do repo: ",
     "technologies": "Technologie",
-    "website": "Strona internetowa"
+    "website": "Strona internetowa",
+    "tournament": "Turniej R6",
+    "descT": "To strona poświęcona turniejowi e-sportowemu. Ciekawe funkcje: boczne menu nawigacyjne, dane z bazy danych (Firebase) zapewniające możliwość zmiany informacji o turnieju w dowolnym momencie.",
+    "aboutT":"Strona internetowa turnieju e-sportowego"
   },
   "contact":{
     "contact": "Kontakt",
