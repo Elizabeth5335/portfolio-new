@@ -6,6 +6,18 @@ import { Row, Col, ListGroup } from "react-bootstrap";
 export default function AboutList() {
   const { t } = useTranslation("global");
 
+  const birthdate = "2002-02-15";
+  const myAge = calculateAge(birthdate);
+
+  function calculateAge(birthdate) {
+    const birthYear = new Date(birthdate).getFullYear();
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+    const birthdayHasPassedThisYear =
+      new Date(birthdate).setFullYear(currentYear) <= Date.now();
+    return birthdayHasPassedThisYear ? age : age - 1;
+  }
+
   return (
     <Row>
       <Row>
@@ -19,8 +31,8 @@ export default function AboutList() {
             <ListGroup.Item>
               <FontAwesomeIcon icon={faChevronRight} />
               <strong> {t("about.Website")}: </strong>
-              <a href="http://yelyzavetalazarieva.space/">
-                <span>http://yelyzavetalazarieva.space/</span>
+              <a href="https://www.yelyzavetalazarieva.space/">
+                <span>yelyzavetalazarieva.space</span>
               </a>
             </ListGroup.Item>
             <ListGroup.Item>
@@ -57,7 +69,7 @@ export default function AboutList() {
             </ListGroup.Item>
             <ListGroup.Item>
               <FontAwesomeIcon icon={faChevronRight} />
-              <strong> {t("about.Age")}:</strong> <span>21</span>
+              <strong> {t("about.Age")}:</strong> <span>{myAge}</span>
             </ListGroup.Item>
             <ListGroup.Item>
               <div className="d-flex">
