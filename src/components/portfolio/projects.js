@@ -1,13 +1,23 @@
 import games from "../../assets/images/games.png";
-import project from "../../assets/images/meta-project.png";
 import portfolio from "../../assets/images/portfolio.png";
 import quizzical from "../../assets/images/quizzical.png";
 import resume from "../../assets/images/resume.png";
 import tournament from "../../assets/images/tournament.png";
+import medicinedelivery from "../../assets/images/medicinedelivery.png";
 
 const projects = [
   {
     id: 1,
+    url: medicinedelivery,
+    name: "portfolio.medicaldelivery",
+    shortDesk: "portfolio.aboutMD",
+    description: "portfolio.descMD",
+    technologies: ["MongoDB", "Express", "React", "NodeJS"],
+    link: "https://medicine-delivery-3.onrender.com/",
+    gitHub: "https://github.com/Elizabeth5335/medicine-delivery",
+  },
+  {
+    id: 2,
     url: quizzical,
     name: "Quizzical",
     shortDesk: "portfolio.aboutQ",
@@ -17,29 +27,28 @@ const projects = [
     gitHub: "https://github.com/Elizabeth5335/quizzical",
   },
   {
-    id: 2,
+    id: 3,
     url: portfolio,
     name: "portfolio.portfolio",
     shortDesk: "portfolio.aboutP",
-    description:
-      "portfolio.descP",
+    description: "portfolio.descP",
     technologies: ["HTML", "CSS", "Bootstrap 5", "Yii2"],
     link: "https://yl-portfolio.000webhostapp.com/",
     gitHub: "https://github.com/Elizabeth5335/portfolio",
   },
   {
-    id: 3,
+    id: 4,
     url: games,
     name: "Gamesss",
     shortDesk: "portfolio.aboutG",
-    description:
-      "portfolio.descG",
+    description: "portfolio.descG",
     technologies: ["HTML", "CSS", "JS"],
     link: "https://elizabeth5335.github.io/Games/",
     gitHub: "https://github.com/Elizabeth5335/games",
   },
+
   {
-    id: 4,
+    id: 5,
     url: tournament,
     name: "portfolio.tournament",
     shortDesk: "portfolio.aboutT",
@@ -49,7 +58,7 @@ const projects = [
     gitHub: "https://github.com/Elizabeth5335/tournament",
   },
   {
-    id: 5,
+    id: 6,
     url: resume,
     name: "portfolio.resume",
     shortDesk: "portfolio.aboutR",
@@ -58,8 +67,6 @@ const projects = [
     link: "https://github.com/Elizabeth5335/Resume",
     gitHub: "https://github.com/Elizabeth5335/Resume",
   },
-  
-  
 ];
 
 export default projects;

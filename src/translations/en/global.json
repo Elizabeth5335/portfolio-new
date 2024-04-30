@@ -83,7 +83,10 @@
     "website": "Website",
     "tournament": "R6 Tournament",
     "descT": "It's a website for an eSports tournament. Interesting features: side navigation menu, data from the database (Firebase) to ensure the possibility of changing information about the tournament at any time.",
-    "aboutT":"Website for an eSports tournament"
+    "aboutT":"Website for an eSports tournament",
+    "medicaldelivery": "Medicine Delivery",
+    "descMD": "It's a website for Medicine delivery system. For website I used MERN stack (MongoDB, Express, React, NodeJS). There is an opportunity to log in (use 'admin' for both login and password to test). <br/>You can add items to favourites, search for items or add to cart. <br/>P.S. Due to the free version of hosting, first load may take up to 1 minute",
+    "aboutMD":"A fullstack application for Medicine delivery system"
   },
   "contact": {
     "contact": "Contact",

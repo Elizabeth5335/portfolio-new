@@ -18,7 +18,9 @@ export default function Details(props) {
         <img src={url} alt={t(name)} className="img-fluid" />
       </div>
       <h2>{t("portfolio.about")}</h2>
-      <p>{t(description)}</p>
+      <p dangerouslySetInnerHTML={{ __html: t(description) }}></p>
+      
+
       <p>
         {t("portfolio.repo")}
         <a href={gitHub} target="_blank">

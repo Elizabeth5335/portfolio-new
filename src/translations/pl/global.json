@@ -82,7 +82,10 @@
     "website": "Strona internetowa",
     "tournament": "Turniej R6",
     "descT": "To strona poświęcona turniejowi e-sportowemu. Ciekawe funkcje: boczne menu nawigacyjne, dane z bazy danych (Firebase) zapewniające możliwość zmiany informacji o turnieju w dowolnym momencie.",
-    "aboutT":"Strona internetowa turnieju e-sportowego"
+    "aboutT":"Strona internetowa turnieju e-sportowego",
+    "medicaldelivery": "Dostawa leków",
+    "descMD": "Ta strona dotyczy systemu dostarczania leków. Użyłam stosu MERN (MongoDB, Express, React, NodeJS). Strona posiada opcję rejestracji (użyj 'admin' jako loginu i hasła do testowania). <br/> Możesz dodawać produkty do ulubionych, wyszukiwać leki i dodawać je do koszyka. <br/>P.S. Ze względu na bezpłatną wersję hostingu pierwsze pobranie może zająć do jednej minuty.",
+     "aboutMD":"Fullstack strona internetowa dotycząca systemu dostarczania leków"
   },
   "contact":{
     "contact": "Kontakt",
