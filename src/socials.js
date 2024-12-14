@@ -18,12 +18,6 @@ export const socials = [
 
     },
     {
-      icon: faInstagram,
-      url: "https://instagram.com/eli_che_va?igshid=YmMyMTA2M2Y=",
-      desc:"Instagram"
-
-    },
-    {
       icon: faFacebook,
       url: "https://www.facebook.com/profile.php?id=100046831201474",
       desc:"Facebook"

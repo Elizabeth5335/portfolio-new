@@ -24,4 +24,10 @@ export const certificates = [
       url: "https://www.coursera.org/account/accomplishments/certificate/8DZ6T2RS2HPN",
       code: "8DZ6T2RS2HPN",
     },
+    {
+      name: "Meta Front-End Developer Specialization ",
+      url: "https://www.coursera.org/account/accomplishments/specialization/certificate/LHMVDD3G92B2",
+      code: "LHMVDD3G92B2",
+    },
+
   ];

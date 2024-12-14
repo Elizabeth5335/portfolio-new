@@ -1,7 +1,7 @@
 import games from "../../assets/images/games.png";
 import portfolio from "../../assets/images/portfolio.png";
 import quizzical from "../../assets/images/quizzical.png";
-import resume from "../../assets/images/resume.png";
+import bibliohome from "../../assets/images/bibliohome.png";
 import tournament from "../../assets/images/tournament.png";
 import medicinedelivery from "../../assets/images/medicinedelivery.png";
 
@@ -46,9 +46,18 @@ const projects = [
     link: "https://elizabeth5335.github.io/Games/",
     gitHub: "https://github.com/Elizabeth5335/games",
   },
-
   {
     id: 5,
+    url: bibliohome,
+    name: "portfolio.Bibliohome",
+    shortDesk: "portfolio.aboutB",
+    description: "portfolio.descB",
+    technologies: ["HTML", "CSS", "React", "Firebase"],
+    link: "https://bibliohome.pl/",
+    gitHub: "https://github.com/Elizabeth5335/Bibliohome",
+  },
+  {
+    id: 6,
     url: tournament,
     name: "portfolio.tournament",
     shortDesk: "portfolio.aboutT",
@@ -56,16 +65,6 @@ const projects = [
     technologies: ["HTML", "CSS", "React", "Firebase"],
     link: "https://r6-tournament-ua.web.app/",
     gitHub: "https://github.com/Elizabeth5335/tournament",
-  },
-  {
-    id: 6,
-    url: resume,
-    name: "portfolio.resume",
-    shortDesk: "portfolio.aboutR",
-    description: "portfolio.descR",
-    technologies: ["HTML", "CSS", "Bootstrap 5"],
-    link: "https://github.com/Elizabeth5335/Resume",
-    gitHub: "https://github.com/Elizabeth5335/Resume",
   },
 ];
 
