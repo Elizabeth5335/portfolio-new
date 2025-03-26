@@ -39,14 +39,13 @@
     "Karazin": "Charkowski Uniwersytet Narodowy im. Wasyla Karazina ",
     "antistress": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (najedź kursorem, aby wejść w interakcję)",
     "antistress-mobile": "P.S. nasze życie jest dość stresujące, więc mam antystres dla Ciebie (poruszaj palcem, aby wejść w interakcję)"
-
   },
 
   "resume": {
     "resume": "Resume",
     "summary": "Streszczenie",
     "Yelyzaveta": "Yelyzaveta Lazarieva",
-    "graduated": "Niedawno ukończyłam Uniwersytet Narodowy im. W.N.Karazina w Charkowie. Mam roczne doświadczenie komercyjne w rozwoju Frontendu.",
+    "graduated": "Ukończyłam Uniwersytet Narodowy im. W.N.Karazina w Charkowie. Mam roczne doświadczenie komercyjne w rozwoju Frontendu.",
     "cities": "Charków, Ukraina / Łódź, Polska",
     "Lodz": "Łódź, Polska",
     "experience": "Doświadczenie zawodowe",
@@ -75,27 +74,33 @@
     "aboutG": "Strona internetowa z trzema grami JS",
     "descG": "To strona internetowa z trzema różnymi grami napisanymi w vanilla js. Możesz grać w Wordle, Breakout i Tetris!",
     "descP": "To była strona-portfolio, której celem było zademonstrowanie moich umiejętności, a także poprzednich projektów. Moje ulubione funkcje to określenie języka, galeria zdjęć i formularz kontaktowy.",
-    "aboutP":"Moja poprzednia strona portfolio",
+    "aboutP": "Moja poprzednia strona portfolio",
     "about": "O projekcie",
     "repo": "Link do repo: ",
     "technologies": "Technologie",
     "website": "Strona internetowa",
     "tournament": "Turniej R6",
     "descT": "To strona poświęcona turniejowi e-sportowemu. Ciekawe funkcje: boczne menu nawigacyjne, dane z bazy danych (Firebase) zapewniające możliwość zmiany informacji o turnieju w dowolnym momencie.",
-    "aboutT":"Strona internetowa turnieju e-sportowego",
+    "aboutT": "Strona internetowa turnieju e-sportowego",
     "medicaldelivery": "Dostawa leków",
     "descMD": "Ta strona dotyczy systemu dostarczania leków. Użyłam stosu MERN (MongoDB, Express, React, NodeJS). Strona posiada opcję rejestracji (użyj 'admin' jako loginu i hasła do testowania). <br/> Możesz dodawać produkty do ulubionych, wyszukiwać leki i dodawać je do koszyka. <br/>P.S. Ze względu na bezpłatną wersję hostingu pierwsze pobranie może zająć do jednej minuty.",
-     "aboutMD":"Fullstack strona internetowa dotycząca systemu dostarczania leków"
+    "aboutMD": "Fullstack strona internetowa dotycząca systemu dostarczania leków",
+    "fem": "Wom Stories",
+    "descFem": "Zaktualizowałam stronę zgodnie z nowoczesnymi zasadami projektowania: poprawiłam kontrast, zwiększyłam czytelność, zoptymalizowałam strukturę i ulepszyłam estetykę. Teraz wygląda nowocześnie, profesjonalnie i jest wygodna dla użytkowników.",
+    "aboutFem": "Strona internetowa dla Społeczności Feministycznej",
+    "photographer": "Strona fotografa",
+    "descPH": "Elegancka i nowoczesna strona dla fotografa.<br/>Funkcje:<br/>- Czysty, minimalistyczny design<br/>- Integracja płatności online<br/>- Optymalizowany UI/UX dla wygodnej nawigacji",
+    "aboutPH": "Profesjonalna strona portfolio dla fotografa"
   },
-  "contact":{
+  "contact": {
     "contact": "Kontakt",
     "phone": "Telefon",
     "socials": "Profile społecznościowe"
   },
-  "notFound":{
-    "Oops":"Ups!",
-    "notExist":"Wygląda na to, że ta strona nie istnieje",
-    "home":"Do domu"
+  "notFound": {
+    "Oops": "Ups!",
+    "notExist": "Wygląda na to, że ta strona nie istnieje",
+    "home": "Do domu"
   },
   "simon": "Link do kota Simona na YouTube"
 }

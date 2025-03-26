@@ -19,23 +19,24 @@ export default function Details(props) {
       </div>
       <h2>{t("portfolio.about")}</h2>
       <p dangerouslySetInnerHTML={{ __html: t(description) }}></p>
-      
 
-      <p>
-        {t("portfolio.repo")}
-        <a href={gitHub} target="_blank">
-          {gitHub}
-        </a>
-      </p>
+      {gitHub && (
+        <p>
+          {t("portfolio.repo")}
+          <a href={gitHub} target="_blank">
+            {gitHub}
+          </a>
+        </p>
+      )}
 
       <h2>{t("portfolio.technologies")}</h2>
       <div className="row">
-      {technologies &&
-        technologies.map((technology) => (
-          <span key={technology} className="technology col-4">
-            {technology}
-          </span>
-        ))}
+        {technologies &&
+          technologies.map((technology) => (
+            <span key={technology} className="technology col-4">
+              {technology}
+            </span>
+          ))}
       </div>
       <h2>{t("portfolio.website")}</h2>
       <a href={link} target="_blank">

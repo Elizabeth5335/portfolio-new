@@ -7,7 +7,7 @@ export default function CodeBlock() {
     frontend: ["HTML", "CSS", "JavaScript", "Responsive Design", "Cross-Browser Compatibility"],
     frameworks: ["React", "Angular", "YII2"],
     style: ["SASS", "Bootstrap"],
-    tools: ["Figma", "Git", "IDEs"],
+    tools: ["Figma", "Git", "IDEs", "Webluim", "Webflow"],
     programming: ["Java", "C", "PHP"],
     other: ["MySQL", "Testing", "RESTAPIs"],
     inPlans: {

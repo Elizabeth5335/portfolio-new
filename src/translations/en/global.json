@@ -44,7 +44,7 @@
     "resume": "Resume",
     "summary": "Summary",
     "Yelyzaveta": "Yelyzaveta Lazarieva",
-    "graduated": "Recently I graduated from V.N.Karazin Kharkiv National University. I have one year of commercial experience in Frontend development.",
+    "graduated": "I am a bachelor in Cybersecurity, graduated from V.N.Karazin Kharkiv National University. I have one year of commercial experience in Frontend development.",
     "cities": "Kharkiv, Ukraine / Łódź, Poland",
     "Lodz": "Łódź, Poland",
     "experience": "Professional Experience",
@@ -86,7 +86,13 @@
     "aboutT":"Website for an eSports tournament",
     "medicaldelivery": "Medicine Delivery",
     "descMD": "It's a website for Medicine delivery system. For website I used MERN stack (MongoDB, Express, React, NodeJS). There is an opportunity to log in (use 'admin' for both login and password to test). <br/>You can add items to favourites, search for items or add to cart. <br/>P.S. Due to the free version of hosting, first load may take up to 1 minute",
-    "aboutMD":"A fullstack application for Medicine delivery system"
+    "aboutMD":"A fullstack application for Medicine delivery system",
+    "fem": "Wom Stories",
+    "descFem": "I redesigned the website following modern design principles: improved contrast, enhanced readability, optimized structure, and refined the overall visual appeal. Now it looks modern, professional, and user-friendly.",
+    "aboutFem":"Website for a Feminist Community",
+    "photographer": "Photographer's Website",
+    "descPH": "A sleek and modern website for a photographer.<br/>Features:<br/>- Clean, minimalistic design<br/>- Online payment integration<br/>- Optimized UI/UX for a seamless experience",
+    "aboutPH":"A professional portfolio website for a photographer"
   },
   "contact": {
     "contact": "Contact",
